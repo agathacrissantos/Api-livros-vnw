@@ -2,7 +2,10 @@ from flask import Flask, render_template, request, jsonify
 
 import sqlite3
 
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
 
 
 def init_db():
